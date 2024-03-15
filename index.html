@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" href="IMG/HRAEI 2.jpeg" type="image/png">
+    <link rel="stylesheet" href="CSS/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/font-awesome.css">
+    <title>HRAEI - Posgrado</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>HOSPITAL REGIONAL DE ALTA ESPECIALIDAD DE IXTAPALUCA</h1>
+        <p>Direccion de planeacion, Enseñanza e investigacion</p>
+    </header>
+
+    <div class="container2">
+        <link> <img src="IMG/hraei.png">
+    </div>
+
+    <div class="container">
+        <input type="text" id="input-busqueda" placeholder="Buscar página...">
+        <button id="boton-busqueda">Buscar</button>
+        <ul id="lista-paginas" style="display: none;"></ul>
+    </div>
+
+    <div id="contenedor-pagina"></div>
+
+    <script>
+        const paginas = [
+            {
+                "titulo": "Elemento de prueba",
+                "url": "articulo1.html"
+            },
+            {
+                "titulo": "Hospitalizacion",
+                "url": "articulo2.html"
+            },
+            {
+                "titulo": "Cancer",
+                "url": "articulo3.html"
+            },
+            {
+                "titulo": "Las TI",
+                "url": "articulo4.html"
+            },
+            {
+                "titulo": "Urgencias",
+                "url": "articulo5.html"
+            }
+        ];
+
+        const listaPaginas = document.getElementById('lista-paginas');
+        const contenedorPagina = document.getElementById('contenedor-pagina');
+
+        function mostrarPagina(url) {
+            fetch(url)
+                .then(response => response.text())
+                .then(html => {
+                    contenedorPagina.innerHTML = html;
+                })
+                .catch(error => {
+                    console.error('Error al cargar la página:', error);
+                });
+        }
+
+
+        function actualizarListaPaginas(consulta) {
+            listaPaginas.innerHTML = '';
+            paginas.forEach(pagina => {
+                if (pagina.titulo.toLowerCase().includes(consulta.toLowerCase())) {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = pagina.titulo;
+                    listItem.addEventListener('click', function () {
+                        mostrarPagina(pagina.url);
+                    });
+                    listaPaginas.appendChild(listItem);
+                }
+            });
+            listaPaginas.style.display = 'block';
+        }
+
+        document.getElementById('boton-busqueda').addEventListener('click', function () {
+            const consulta = document.getElementById('input-busqueda').value;
+            actualizarListaPaginas(consulta);
+        });
+
+    </script>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <p>Direccion: Calle principal</p>
+                <p>Telefono: +52 55 5565654545</p>
+                <p>Email: Info@empresa.com</p>
+            </div>
+            <div class="footer-column">
+                <h3>Enlaces rapidos</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Siguenos</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 HRAEI, todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+
+</html>

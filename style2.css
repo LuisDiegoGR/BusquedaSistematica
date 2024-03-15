@@ -1,0 +1,125 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  header {
+    background-color: #0F5929;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .container {
+        max-width: 1000px;
+        margin: 20px auto;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow:0 0 10px rgb(206, 206, 206);
+        padding: 20px;
+        align-items: center;
+  }
+
+  .container input[type="text"] {
+    margin: 10px;
+    width: calc(89% - 80px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+  }
+
+  .container button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .container button:hover {
+    background-color: #0056b3;
+  }
+
+  .container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  .container li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .container li:hover {
+    background-color: #e0e0e0;
+  }
+
+  
+
+
+  .container2 {
+    max-width: 800px;
+    margin: 13px auto;
+    padding: 1px;
+    background-color: #fff;
+    text-align: center;
+  }
+
+.footer{
+  background-color: #0F5929;
+  padding: 20px;
+  margin-top: auto;
+  margin-top: 100px;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer-column{
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-column h3 {
+  color: white;
+}
+
+.footer-column p {
+  margin: 5px 0;
+  color: white;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.copyright{
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}

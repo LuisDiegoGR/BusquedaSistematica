@@ -1,0 +1,233 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  header {
+    background-color: #0F5929;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .container {
+    max-width: 486px;
+    margin: 13px auto;
+    padding: 19px;
+    background-color: #fff;
+    box-shadow: 0 0 5px #A4A6A5;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .container2 {
+    max-width: 800px;
+    margin: 13px auto;
+    padding: 1px;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  .container3 {
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 1px;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  .welcome-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .InicioSes {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0F5929;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    border-color: white;
+  }
+
+  .InicioSes:hover {
+    background-color: #139641;
+    color: white;
+    border-color: white;
+  }
+
+  .DownPDF {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8b0000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    border-color: white;
+  }
+
+  .DownPDF:hover {
+    background-color: #d80000;
+    color: white;
+    border-color: white;
+  }
+
+  .ImpPDF {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #02008b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    border-color: white;
+  }
+
+  .ImpPDF:hover {
+    background-color: #0300c0;
+    color: white;
+    border-color: white;
+  }
+
+  form {
+    max-width: 400px;
+    margin: 0.6px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 0px;
+    padding: 10px;
+    border-color: #A4A6A5;
+}
+
+.inputcustom {
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.inputcustom:focus{
+  outline: none;
+  border-color: #139641;
+  box-shadow: 0 0 5px #139641;
+}
+
+.footer{
+  background-color: #0F5929;
+  padding: 20px;
+  margin-top: auto;
+  margin-top: 100px;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer-column{
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-column h3 {
+  color: white;
+}
+
+.footer-column p {
+  margin: 5px 0;
+  color: white;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.copyright{
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+
+.resultados-container {
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
+}
+
+.resultados-container li {
+  margin-bottom: 20px;
+}
+
+article {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+article h3 a {
+  margin-top: 0;
+  text-decoration: none;
+  color: #0F5929;
+}
+
+article p {
+  margin-bottom: 5px;
+}
+
+.articulo-container {
+  padding: 40px;
+}
+
+.articulo-container li {
+  margin-bottom: 20px;
+}
+
+.articulo-cont {
+  padding: 60px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 6px #A4A6A5;
+}
+
+.articulo-cont h3 {
+  margin: 10px;
+  text-decoration: none;
+  color: #0F5929;
+}
+
+.articulo-cont p {
+  margin: 10px;
+  text-align: justify;
+}
+
+aside {
+  display: flex;
+  flex-direction: row;
+}
+
+aside img {
+  max-width: 100%;
+  height: auto;
+  margin-left: 10px;
+}
